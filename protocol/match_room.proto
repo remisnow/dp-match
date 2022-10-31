@@ -1,0 +1,71 @@
+syntax = "proto3";                // proto 版本，建议使用 proto3
+option go_package = "protocol"; // 包名声明符
+
+//   match  ->  roomService
+//   --------------------------------------------------------------------------------------------
+
+//创建房间
+message CreateRoom{
+  int32 gameId = 1;     // 游戏id
+  int32 gameMode = 2;   // 玩法模式
+  int64 roomId = 3;    // 房间id
+  string data = 4;      // 附加信息
+}
+
+//踢人逻辑
+message KickUser{
+  int64 roomId = 1;    // 房间id
+  int64 userId = 2;    // 玩家id
+}
+
+//   roomService  ->  match
+//   --------------------------------------------------------------------------------------------
+
+// 房间服信息同步状态
+enum RoomServiceState{
+  load = 0;   //首次加载
+  reload = 1; //重新加载
+  heart = 2;  //心跳消息
+  busy = 3;   //服务器繁忙
+}
+
+//房间服务信息同步
+message UpdateRoomService{
+  string serviceName = 1;     //服务器名字
+  RoomServiceState state = 2; //服务器状态
+  string data = 3;            //不同状态更新的数据json state = 1||0{address}
+}
+
+// 玩家进入房间
+message UserEnterRoom{
+  int64 userId = 1;      // 玩家id
+  int64 roomId = 2;      // 房间id
+  int64 error = 3;        // 结果 0 是成功
+}
+
+// 玩家离开房间
+message UserLeaveRoom{
+  int64 userId = 1;    // 玩家id
+  int64 roomId = 2;    // 房间id
+}
+
+//创建房间的回包
+message CreateRoomBack {
+  int32 gameId = 1;     // 游戏id
+  int32 gameMode = 2;   // 玩法模式
+  int64 roomId = 3;    // 房间id
+  int32 error = 4;      // 创建是否成功
+}
+
+// 房间同步
+enum RoomState{
+  RoomHeart = 0;      //心跳消息
+  RoomDestroy = 1;    //房间销毁
+  RoomUpdate = 2;    //更新房间信息
+}
+//通知match服去redis更新数据
+message UpdateRoom{
+  int64 roomId = 1;      // 房间Id
+  RoomState state = 2;    // 消息状态
+  string data = 3;        // 额外同步的数据信息 json
+}

@@ -1,0 +1,9 @@
+{
+  "online": {
+    "room_service_max_count": 100,
+    "room_player_max_count": 9
+  },
+  "local": {
+    "room_service_max_count": 100
+  }
+}

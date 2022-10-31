@@ -1,0 +1,28 @@
+{
+  "Loggers":
+  {
+    "test1":
+    {
+      "OutFile":"./logfile/test1.log",
+      "Level":6,
+      "RotationTime":1,
+      "RotationSize": 209715200,
+      "MaxAge": 5,
+      "Stdout": true,
+      "ReportCaller": true,
+      "IsJsonFormatter": true
+    },
+    "test2":
+    {
+      "OutFile":"/Users/yaoqiang/work/kygc/service/lib-common/log/logfile/test2.log",
+      "Level":6,
+      "RotationTime":1,
+      "RotationSize": 209715200,
+      "MaxAge": 5,
+      "Stdout": true,
+      "ReportCaller": true,
+      "IsJsonFormatter": true
+    }
+  },
+  "DefaultLogger":"test1"
+}

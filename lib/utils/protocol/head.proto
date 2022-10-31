@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package msg;
+option go_package = "protocol";
+
+//客户端信息
+message ClientInfo {
+  string AppName = 1;  //应用名称
+  int32  AppId = 2;  //应用id
+  string VersionName = 3;  //版本名
+  int32  VersionCode = 4;  //版本号
+  string Channel = 5;  //渠道
+  string Media = 6;  //媒体
+  string Platform = 7;  //平台
+  string Device = 8;  //设备信息
+  string OaId = 9;  //OaId
+  string Custom = 10; //自定义
+}
+
+//请求
+message ToucanRequest {
+  ClientInfo CliInfo = 1; //客户端信息
+  string Token = 2; //登录后服务器下发的token
+  int64 CliTime = 3; //客户端发送时间戳
+  int32 MessageId = 4; //消息id
+  int32 DataLen = 5; //消息长度
+  bytes Data = 6; //消息数据
+}
+
+message ToucanBody {
+  int32 MessageId = 1; //消息id
+  int32 DataLen = 2; //消息长度
+  bytes Data = 3; //消息数据
+}
+
+//回复
+message ToucanResponse {
+  int32 RetCode = 1; //错误码
+  string RetMsg = 2; //错误消息
+  int64 CliTime = 3; //客户端时间戳
+  int64 SvrTime = 4; //服务器时间戳
+  repeated ToucanBody Bodies = 5; //消息
+}

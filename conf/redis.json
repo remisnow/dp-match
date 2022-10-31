@@ -1,0 +1,14 @@
+{
+  "match": {
+    "addrs":["127.0.0.1:6380"],
+    "auth":"",
+    "pool_size":10,
+    "connType":0
+  },
+  "match_11": {
+    "addrs":["192.168.88.11:6379"],
+    "auth":"",
+    "pool_size":10,
+    "connType":0
+  }
+}

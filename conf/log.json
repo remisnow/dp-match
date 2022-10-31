@@ -1,0 +1,17 @@
+{
+  "Loggers":
+  {
+    "server":
+    {
+      "OutFile":"./logfile/server.log",
+      "Level":6,
+      "RotationTime":1440,
+      "RotationSize": 209715200,
+      "MaxAge": 7200,
+      "Stdout": true,
+      "ReportCaller": true,
+      "IsJsonFormatter": false
+    }
+  },
+  "DefaultLogger":"server"
+}

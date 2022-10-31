@@ -1,0 +1,192 @@
+2022-10-30 00:01:24.140 [messageHandler.go:200:RedisCall] [INFO] : ReqCall : Key=-1067799229
+2022-10-30 00:01:24.142 [messageHandler.go:69:Do] [DEBUG] : recv : msg=serviceName:"wwk-0" data:"{\"address\":\"192.168.88.11:8888\"}" 
+2022-10-30 00:01:24.143 [entry.go:411:Println] [INFO] : OnUpdateRoomService serviceName:"wwk-0" data:"{\"address\":\"192.168.88.11:8888\"}" 
+2022-10-30 00:01:24.143 [entry.go:411:Println] [INFO] : initialRS
+2022-10-30 00:01:24.147 [entry.go:411:Println] [INFO] : CreteRoomService  wwk-0 {"address":"192.168.88.11:8888"}
+2022-10-30 00:01:24.165 [messageHandler.go:200:RedisCall] [INFO] : ReqCall : Key=-529291750
+2022-10-30 00:01:24.166 [messageHandler.go:69:Do] [DEBUG] : recv : msg=gameId:1 gameMode:1 roomId:3 
+2022-10-30 00:01:24.167 [entry.go:411:Println] [INFO] : 事件createFinish的 回调
+2022-10-30 00:01:24.193 [entry.go:411:Println] [INFO] : CallEvent =  1
+2022-10-30 00:01:24.193 [entry.go:411:Println] [INFO] : MessageId  MatchResp
+2022-10-30 00:01:24.194 [messageHandler.go:170:HttpCall] [DEBUG] : send msg : msg=Address:"192.168.88.11:8888" TicketId:"Match-Player-131427131847" Rand:1427131847 
+2022-10-30 00:01:24.194 [message.go:139:ResponseMessage] [INFO] : send message success : Message=CliTime:1667087861655 SvrTime:1667059284194 Bodies:<MessageId:-1851821968 DataLen:53 Data:"\022\022192.168.88.11:8888\032\031Match-Player-131427131847 \307\233\301\250\005" > 
+2022-10-30 00:01:38.510 [entry.go:411:Println] [INFO] : parseToucanRequest 
+2022-10-30 00:01:38.511 [message.go:97:parseToucanRequest] [INFO] : message header : MessageId=444134964, DataLen=2, ClientInfo=AppId:1 VersionCode:1 , Token=user-1, CliTime=1667088098200,
+2022-10-30 00:01:38.514 [entry.go:411:Println] [INFO] : receive Common /common
+2022-10-30 00:01:38.514 [entry.go:411:Println] [INFO] : 
+2022-10-30 00:01:38.514 [messageHandler.go:146:HttpCall] [INFO] : ReqCall : Key=444134964
+2022-10-30 00:01:38.514 [messageHandler.go:42:HttpDo] [DEBUG] : recv : msg=GameMode:1 
+2022-10-30 00:01:38.514 [entry.go:411:Println] [INFO] : MessageId  MatchResp
+2022-10-30 00:01:38.514 [messageHandler.go:170:HttpCall] [DEBUG] : send msg : msg=RetCode:1006 
+2022-10-30 00:01:38.514 [message.go:139:ResponseMessage] [INFO] : send message success : Message=CliTime:1667088098200 SvrTime:1667059298514 Bodies:<MessageId:-1851821968 DataLen:3 Data:"\010\356\007" > 
+2022-10-30 00:02:12.366 [entry.go:411:Println] [INFO] : parseToucanRequest 
+2022-10-30 00:02:12.366 [message.go:97:parseToucanRequest] [INFO] : message header : DataLen=2, ClientInfo=AppId:1 VersionCode:1 , Token=user-1, CliTime=1667088132106, MessageId=444134964,
+2022-10-30 00:02:12.375 [entry.go:411:Println] [INFO] : receive Common /common
+2022-10-30 00:02:12.375 [entry.go:411:Println] [INFO] : 
+2022-10-30 00:02:12.375 [messageHandler.go:146:HttpCall] [INFO] : ReqCall : Key=444134964
+2022-10-30 00:02:12.375 [messageHandler.go:42:HttpDo] [DEBUG] : recv : msg=GameMode:1 
+2022-10-30 00:02:12.375 [entry.go:411:Println] [INFO] : MessageId  MatchResp
+2022-10-30 00:02:12.375 [messageHandler.go:170:HttpCall] [DEBUG] : send msg : msg=RetCode:1006 
+2022-10-30 00:02:12.375 [message.go:139:ResponseMessage] [INFO] : send message success : Message=CliTime:1667088132106 SvrTime:1667059332375 Bodies:<MessageId:-1851821968 DataLen:3 Data:"\010\356\007" > 
+2022-10-30 00:02:24.210 [entry.go:366:Printf] [INFO] : TimerFun %!q(func()=0x60ab80)
+2022-10-30 00:03:21.449 [entry.go:411:Println] [INFO] : start server
+2022-10-30 00:03:21.456 [entry.go:411:Println] [INFO] : initialRS
+2022-10-30 00:03:21.467 [entry.go:411:Println] [INFO] : CreteRoomService  wwk-0 {"address":"192.168.88.11:8888"}
+2022-10-30 00:03:21.484 [entry.go:411:Println] [INFO] : MessageId  MatchReq
+2022-10-30 00:03:21.484 [messageHandler.go:104:HttpRegister] [INFO] : register rpc : key=444134964
+2022-10-30 00:03:21.484 [entry.go:411:Println] [INFO] : MessageId  UpdateRoomService
+2022-10-30 00:03:21.484 [messageHandler.go:119:Register] [INFO] : register rpc : key=-1067799229
+2022-10-30 00:03:21.484 [entry.go:411:Println] [INFO] : MessageId  UserEnterRoom
+2022-10-30 00:03:21.484 [messageHandler.go:119:Register] [INFO] : register rpc : key=-88346051
+2022-10-30 00:03:21.484 [entry.go:411:Println] [INFO] : MessageId  UserLeaveRoom
+2022-10-30 00:03:21.484 [messageHandler.go:119:Register] [INFO] : register rpc : key=1763102974
+2022-10-30 00:03:21.484 [entry.go:411:Println] [INFO] : MessageId  CreateRoomBack
+2022-10-30 00:03:21.485 [messageHandler.go:119:Register] [INFO] : register rpc : key=-529291750
+2022-10-30 00:03:21.485 [entry.go:411:Println] [INFO] : MessageId  UpdateRoom
+2022-10-30 00:03:21.485 [messageHandler.go:119:Register] [INFO] : register rpc : key=133994988
+2022-10-30 00:03:21.499 [entry.go:411:Println] [INFO] : CreateConsumerGroup out =  
+2022-10-30 00:03:44.619 [messageHandler.go:200:RedisCall] [INFO] : ReqCall : Key=-1067799229
+2022-10-30 00:03:44.619 [messageHandler.go:69:Do] [DEBUG] : recv : msg=serviceName:"wwk-0" data:"{\"address\":\"192.168.88.11:8888\"}" 
+2022-10-30 00:03:44.619 [entry.go:411:Println] [INFO] : OnUpdateRoomService serviceName:"wwk-0" data:"{\"address\":\"192.168.88.11:8888\"}" 
+2022-10-30 00:03:44.619 [entry.go:411:Println] [INFO] : initialRS
+2022-10-30 00:03:44.635 [entry.go:411:Println] [INFO] : CreteRoomService  wwk-0 {"address":"192.168.88.11:8888"}
+2022-10-30 00:04:00.386 [entry.go:411:Println] [INFO] : parseToucanRequest 
+2022-10-30 00:04:00.386 [message.go:97:parseToucanRequest] [INFO] : message header : DataLen=2, ClientInfo=AppId:1 VersionCode:1 , Token=user-1, CliTime=1667088240081, MessageId=444134964,
+2022-10-30 00:04:00.394 [entry.go:411:Println] [INFO] : receive Common /common
+2022-10-30 00:04:00.394 [entry.go:411:Println] [INFO] : 
+2022-10-30 00:04:00.394 [messageHandler.go:146:HttpCall] [INFO] : ReqCall : Key=444134964
+2022-10-30 00:04:00.394 [messageHandler.go:42:HttpDo] [DEBUG] : recv : msg=GameMode:1 
+2022-10-30 00:04:00.409 [entry.go:411:Println] [INFO] : 2860303294
+2022-10-30 00:04:00.438 [entry.go:366:Printf] [INFO] : controller.MatchChan %!q(func()=0x7f9540)
+2022-10-30 00:04:00.438 [entry.go:411:Println] [INFO] : curRoomService = &{{{0 0} 0 0 0 0} wwk-0 0 192.168.88.11:8888 stream.wwk-0 {"address":"192.168.88.11:8888"} {map[] 0 {{0 0} 0 0 0 0}}}
+2022-10-30 00:04:00.453 [entry.go:411:Println] [INFO] : 3226689904
+2022-10-30 00:04:00.469 [entry.go:411:Println] [INFO] : 2860303294
+2022-10-30 00:04:00.470 [entry.go:411:Println] [INFO] : MessageId  CreateRoom
+2022-10-30 00:04:00.484 [entry.go:411:Println] [INFO] : PutMsg 1667059439756-0 
+2022-10-30 00:04:00.497 [messageHandler.go:200:RedisCall] [INFO] : ReqCall : Key=-529291750
+2022-10-30 00:04:00.497 [messageHandler.go:69:Do] [DEBUG] : recv : msg=gameId:1 gameMode:1 roomId:4 
+2022-10-30 00:04:00.497 [entry.go:411:Println] [INFO] : 事件createFinish的 回调
+2022-10-30 00:04:00.515 [entry.go:411:Println] [INFO] : CallEvent =  1
+2022-10-30 00:04:00.515 [entry.go:411:Println] [INFO] : MessageId  MatchResp
+2022-10-30 00:04:00.515 [messageHandler.go:170:HttpCall] [DEBUG] : send msg : msg=Address:"192.168.88.11:8888" TicketId:"Match-Player-241298498081" Rand:1298498081 
+2022-10-30 00:04:00.515 [message.go:139:ResponseMessage] [INFO] : send message success : Message=CliTime:1667088240081 SvrTime:1667059440515 Bodies:<MessageId:-1851821968 DataLen:53 Data:"\022\022192.168.88.11:8888\032\031Match-Player-241298498081 \241\204\226\353\004" > 
+2022-10-30 00:05:00.506 [entry.go:366:Printf] [INFO] : TimerFun %!q(func()=0x7fab80)
+2022-10-30 00:08:09.736 [messageHandler.go:200:RedisCall] [INFO] : ReqCall : Key=-1067799229
+2022-10-30 00:08:09.737 [messageHandler.go:69:Do] [DEBUG] : recv : msg=serviceName:"wwk-0" data:"{\"address\":\"192.168.88.11:8888\"}" 
+2022-10-30 00:08:09.737 [entry.go:411:Println] [INFO] : OnUpdateRoomService serviceName:"wwk-0" data:"{\"address\":\"192.168.88.11:8888\"}" 
+2022-10-30 00:08:09.737 [entry.go:411:Println] [INFO] : initialRS
+2022-10-30 00:08:09.744 [entry.go:411:Println] [INFO] : CreteRoomService  wwk-0 {"address":"192.168.88.11:8888"}
+2022-10-30 00:08:22.463 [entry.go:411:Println] [INFO] : parseToucanRequest 
+2022-10-30 00:08:22.463 [message.go:97:parseToucanRequest] [INFO] : message header : CliTime=1667088502186, MessageId=444134964, DataLen=2, ClientInfo=AppId:1 VersionCode:1 , Token=user-1,
+2022-10-30 00:08:22.466 [entry.go:411:Println] [INFO] : receive Common /common
+2022-10-30 00:08:22.466 [entry.go:411:Println] [INFO] : 
+2022-10-30 00:08:22.466 [messageHandler.go:146:HttpCall] [INFO] : ReqCall : Key=444134964
+2022-10-30 00:08:22.467 [messageHandler.go:42:HttpDo] [DEBUG] : recv : msg=GameMode:1 
+2022-10-30 00:08:22.467 [entry.go:366:Printf] [INFO] : controller.MatchChan %!q(func()=0x7f9540)
+2022-10-30 00:08:22.467 [entry.go:411:Println] [INFO] : curRoomService = &{{{0 0} 0 0 0 0} wwk-0 0 192.168.88.11:8888 stream.wwk-0 {"address":"192.168.88.11:8888"} {map[] 0 {{0 0} 0 0 0 0}}}
+2022-10-30 00:08:22.482 [entry.go:411:Println] [INFO] : 3063299025
+2022-10-30 00:08:22.496 [entry.go:411:Println] [INFO] : 2860303294
+2022-10-30 00:08:22.496 [entry.go:411:Println] [INFO] : MessageId  CreateRoom
+2022-10-30 00:08:22.511 [entry.go:411:Println] [INFO] : PutMsg 1667059701782-0 
+2022-10-30 00:08:22.531 [messageHandler.go:200:RedisCall] [INFO] : ReqCall : Key=-529291750
+2022-10-30 00:08:22.531 [messageHandler.go:69:Do] [DEBUG] : recv : msg=gameId:1 gameMode:1 roomId:5 
+2022-10-30 00:08:22.531 [entry.go:411:Println] [INFO] : 事件createFinish的 回调
+2022-10-30 00:08:22.559 [entry.go:411:Println] [INFO] : CallEvent =  1
+2022-10-30 00:08:22.559 [entry.go:411:Println] [INFO] : MessageId  MatchResp
+2022-10-30 00:08:22.559 [messageHandler.go:170:HttpCall] [DEBUG] : send msg : msg=Address:"192.168.88.11:8888" TicketId:"Match-Player-252019727887" Rand:2019727887 
+2022-10-30 00:08:22.559 [message.go:139:ResponseMessage] [INFO] : send message success : Message=CliTime:1667088502186 SvrTime:1667059702559 Bodies:<MessageId:-1851821968 DataLen:53 Data:"\022\022192.168.88.11:8888\032\031Match-Player-252019727887 \217\264\212\303\007" > 
+2022-10-30 00:08:52.581 [entry.go:411:Println] [INFO] : parseToucanRequest 
+2022-10-30 00:08:52.581 [message.go:97:parseToucanRequest] [INFO] : message header : MessageId=444134964, DataLen=2, ClientInfo=AppId:1 VersionCode:1 , Token=user-1, CliTime=1667088532389,
+2022-10-30 00:08:52.586 [entry.go:411:Println] [INFO] : receive Common /common
+2022-10-30 00:08:52.586 [entry.go:411:Println] [INFO] : 
+2022-10-30 00:08:52.586 [messageHandler.go:146:HttpCall] [INFO] : ReqCall : Key=444134964
+2022-10-30 00:08:52.586 [messageHandler.go:42:HttpDo] [DEBUG] : recv : msg=GameMode:1 
+2022-10-30 00:08:52.586 [entry.go:411:Println] [INFO] : MessageId  MatchResp
+2022-10-30 00:08:52.586 [messageHandler.go:170:HttpCall] [DEBUG] : send msg : msg=RetCode:1006 
+2022-10-30 00:08:52.586 [message.go:139:ResponseMessage] [INFO] : send message success : Message=CliTime:1667088532389 SvrTime:1667059732586 Bodies:<MessageId:-1851821968 DataLen:3 Data:"\010\356\007" > 
+2022-10-30 00:08:54.993 [messageHandler.go:200:RedisCall] [INFO] : ReqCall : Key=-1067799229
+2022-10-30 00:08:54.993 [messageHandler.go:69:Do] [DEBUG] : recv : msg=serviceName:"wwk-0" data:"{\"address\":\"192.168.88.11:8888\"}" 
+2022-10-30 00:08:54.994 [entry.go:411:Println] [INFO] : OnUpdateRoomService serviceName:"wwk-0" data:"{\"address\":\"192.168.88.11:8888\"}" 
+2022-10-30 00:08:54.994 [entry.go:411:Println] [INFO] : initialRS
+2022-10-30 00:08:55.003 [entry.go:411:Println] [INFO] : CreteRoomService  wwk-0 {"address":"192.168.88.11:8888"}
+2022-10-30 00:09:03.822 [entry.go:411:Println] [INFO] : start server
+2022-10-30 00:09:03.829 [entry.go:411:Println] [INFO] : initialRS
+2022-10-30 00:09:03.844 [entry.go:411:Println] [INFO] : CreteRoomService  wwk-0 {"address":"192.168.88.11:8888"}
+2022-10-30 00:09:03.855 [entry.go:411:Println] [INFO] : MessageId  MatchReq
+2022-10-30 00:09:03.856 [messageHandler.go:104:HttpRegister] [INFO] : register rpc : key=444134964
+2022-10-30 00:09:03.856 [entry.go:411:Println] [INFO] : MessageId  UpdateRoomService
+2022-10-30 00:09:03.856 [messageHandler.go:119:Register] [INFO] : register rpc : key=-1067799229
+2022-10-30 00:09:03.856 [entry.go:411:Println] [INFO] : MessageId  UserEnterRoom
+2022-10-30 00:09:03.856 [messageHandler.go:119:Register] [INFO] : register rpc : key=-88346051
+2022-10-30 00:09:03.856 [entry.go:411:Println] [INFO] : MessageId  UserLeaveRoom
+2022-10-30 00:09:03.856 [messageHandler.go:119:Register] [INFO] : register rpc : key=1763102974
+2022-10-30 00:09:03.856 [entry.go:411:Println] [INFO] : MessageId  CreateRoomBack
+2022-10-30 00:09:03.856 [messageHandler.go:119:Register] [INFO] : register rpc : key=-529291750
+2022-10-30 00:09:03.856 [entry.go:411:Println] [INFO] : MessageId  UpdateRoom
+2022-10-30 00:09:03.856 [messageHandler.go:119:Register] [INFO] : register rpc : key=133994988
+2022-10-30 00:09:03.858 [entry.go:411:Println] [INFO] : CreateConsumerGroup out =  
+2022-10-30 00:09:19.758 [entry.go:411:Println] [INFO] : parseToucanRequest 
+2022-10-30 00:09:19.759 [message.go:97:parseToucanRequest] [INFO] : message header : CliTime=1667088559567, MessageId=444134964, DataLen=2, ClientInfo=AppId:1 VersionCode:1 , Token=user-1,
+2022-10-30 00:09:19.760 [entry.go:411:Println] [INFO] : receive Common /common
+2022-10-30 00:09:19.761 [entry.go:411:Println] [INFO] : 
+2022-10-30 00:09:19.761 [messageHandler.go:146:HttpCall] [INFO] : ReqCall : Key=444134964
+2022-10-30 00:09:19.761 [messageHandler.go:42:HttpDo] [DEBUG] : recv : msg=GameMode:1 
+2022-10-30 00:09:19.775 [entry.go:411:Println] [INFO] : 2881399177
+2022-10-30 00:09:19.806 [entry.go:366:Printf] [INFO] : controller.MatchChan %!q(func()=0xf99540)
+2022-10-30 00:09:19.806 [entry.go:411:Println] [INFO] : curRoomService = &{{{0 0} 0 0 0 0} wwk-0 0 192.168.88.11:8888 stream.wwk-0 {"address":"192.168.88.11:8888"} {map[] 0 {{0 0} 0 0 0 0}}}
+2022-10-30 00:09:19.823 [entry.go:411:Println] [INFO] : 3285693726
+2022-10-30 00:09:19.840 [entry.go:411:Println] [INFO] : 2881399177
+2022-10-30 00:09:19.840 [entry.go:411:Println] [INFO] : MessageId  CreateRoom
+2022-10-30 00:09:19.854 [entry.go:411:Println] [INFO] : PutMsg 1667059759124-0 
+2022-10-30 00:09:19.880 [messageHandler.go:200:RedisCall] [INFO] : ReqCall : Key=-529291750
+2022-10-30 00:09:19.880 [messageHandler.go:69:Do] [DEBUG] : recv : msg=gameId:1 gameMode:1 roomId:6 
+2022-10-30 00:09:19.880 [entry.go:411:Println] [INFO] : 事件createFinish的 回调
+2022-10-30 00:09:19.899 [entry.go:411:Println] [INFO] : CallEvent =  1
+2022-10-30 00:09:19.899 [entry.go:411:Println] [INFO] : MessageId  MatchResp
+2022-10-30 00:09:19.900 [messageHandler.go:170:HttpCall] [DEBUG] : send msg : msg=Address:"192.168.88.11:8888" TicketId:"Match-Player-361298498081" Rand:1298498081 
+2022-10-30 00:09:19.900 [message.go:139:ResponseMessage] [INFO] : send message success : Message=CliTime:1667088559567 SvrTime:1667059759900 Bodies:<MessageId:-1851821968 DataLen:53 Data:"\022\022192.168.88.11:8888\032\031Match-Player-361298498081 \241\204\226\353\004" > 
+2022-10-30 00:09:20.420 [messageHandler.go:200:RedisCall] [INFO] : ReqCall : Key=-88346051
+2022-10-30 00:09:20.420 [messageHandler.go:69:Do] [DEBUG] : recv : msg=userId:1 roomId:6 
+2022-10-30 17:23:17.230 [entry.go:411:Println] [INFO] : start server
+2022-10-30 17:25:05.679 [entry.go:411:Println] [INFO] : start server
+2022-10-30 17:25:05.684 [entry.go:411:Println] [INFO] : MessageId  MatchReq
+2022-10-30 17:25:05.684 [messageHandler.go:104:HttpRegister] [INFO] : register rpc : key=444134964
+2022-10-30 17:25:05.684 [entry.go:411:Println] [INFO] : MessageId  UpdateRoomService
+2022-10-30 17:25:05.685 [messageHandler.go:119:Register] [INFO] : register rpc : key=-1067799229
+2022-10-30 17:25:05.685 [entry.go:411:Println] [INFO] : MessageId  UserEnterRoom
+2022-10-30 17:25:05.685 [messageHandler.go:119:Register] [INFO] : register rpc : key=-88346051
+2022-10-30 17:25:05.685 [entry.go:411:Println] [INFO] : MessageId  UserLeaveRoom
+2022-10-30 17:25:05.685 [messageHandler.go:119:Register] [INFO] : register rpc : key=1763102974
+2022-10-30 17:25:05.685 [entry.go:411:Println] [INFO] : MessageId  CreateRoomBack
+2022-10-30 17:25:05.685 [messageHandler.go:119:Register] [INFO] : register rpc : key=-529291750
+2022-10-30 17:25:05.685 [entry.go:411:Println] [INFO] : MessageId  UpdateRoom
+2022-10-30 17:25:05.685 [messageHandler.go:119:Register] [INFO] : register rpc : key=133994988
+2022-10-30 17:25:05.686 [entry.go:411:Println] [INFO] : CreateConsumerGroup out =  OK
+2022-10-30 17:27:31.955 [entry.go:411:Println] [INFO] : start server
+2022-10-30 17:27:31.961 [entry.go:411:Println] [INFO] : MessageId  MatchReq
+2022-10-30 17:27:31.961 [messageHandler.go:104:HttpRegister] [INFO] : register rpc : key=444134964
+2022-10-30 17:27:31.961 [entry.go:411:Println] [INFO] : MessageId  UpdateRoomService
+2022-10-30 17:27:31.961 [messageHandler.go:119:Register] [INFO] : register rpc : key=-1067799229
+2022-10-30 17:27:31.961 [entry.go:411:Println] [INFO] : MessageId  UserEnterRoom
+2022-10-30 17:27:31.961 [messageHandler.go:119:Register] [INFO] : register rpc : key=-88346051
+2022-10-30 17:27:31.961 [entry.go:411:Println] [INFO] : MessageId  UserLeaveRoom
+2022-10-30 17:27:31.961 [messageHandler.go:119:Register] [INFO] : register rpc : key=1763102974
+2022-10-30 17:27:31.961 [entry.go:411:Println] [INFO] : MessageId  CreateRoomBack
+2022-10-30 17:27:31.961 [messageHandler.go:119:Register] [INFO] : register rpc : key=-529291750
+2022-10-30 17:27:31.961 [entry.go:411:Println] [INFO] : MessageId  UpdateRoom
+2022-10-30 17:27:31.961 [messageHandler.go:119:Register] [INFO] : register rpc : key=133994988
+2022-10-30 17:27:31.973 [entry.go:411:Println] [INFO] : CreateConsumerGroup out =  
+2022-10-30 17:29:14.736 [entry.go:411:Println] [INFO] : start server
+2022-10-30 17:29:14.741 [entry.go:411:Println] [INFO] : MessageId  MatchReq
+2022-10-30 17:29:14.742 [messageHandler.go:104:HttpRegister] [INFO] : register rpc : key=444134964
+2022-10-30 17:29:14.742 [entry.go:411:Println] [INFO] : MessageId  UpdateRoomService
+2022-10-30 17:29:14.742 [messageHandler.go:119:Register] [INFO] : register rpc : key=-1067799229
+2022-10-30 17:29:14.742 [entry.go:411:Println] [INFO] : MessageId  UserEnterRoom
+2022-10-30 17:29:14.742 [messageHandler.go:119:Register] [INFO] : register rpc : key=-88346051
+2022-10-30 17:29:14.742 [entry.go:411:Println] [INFO] : MessageId  UserLeaveRoom
+2022-10-30 17:29:14.742 [messageHandler.go:119:Register] [INFO] : register rpc : key=1763102974
+2022-10-30 17:29:14.742 [entry.go:411:Println] [INFO] : MessageId  CreateRoomBack
+2022-10-30 17:29:14.742 [messageHandler.go:119:Register] [INFO] : register rpc : key=-529291750
+2022-10-30 17:29:14.742 [entry.go:411:Println] [INFO] : MessageId  UpdateRoom
+2022-10-30 17:29:14.742 [messageHandler.go:119:Register] [INFO] : register rpc : key=133994988
+2022-10-30 17:29:14.743 [entry.go:411:Println] [INFO] : CreateConsumerGroup out =  

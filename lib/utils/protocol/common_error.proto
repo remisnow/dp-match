@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package msg;
+option go_package = "protocol";
+
+message CommonError {
+  int32 RetCode = 1;
+  string RetMsg = 2;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";                // proto 版本，建议使用 proto3
+option go_package = "protocol"; // 包名声明符
+
+package Msg;
+
+message MatchReq {
+    int32 GameMode = 1;//游戏模式
+    string Extra = 2;//json的字符串格式，存放额外信息
+}
+
+
+message MatchResp{
+    int32 RetCode = 1;//错误码
+    string Address = 2;//服务器地址
+    string TicketId = 3;//凭据ID
+    int32 Rand = 4;//随机数
+}
