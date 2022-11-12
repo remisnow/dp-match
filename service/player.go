@@ -93,6 +93,7 @@ func (p *Player) OnUserEnteringRoom(id int64) {
 				GetRoomManager().GetRoom(p.roomId).RemovePlayer(p)
 				p.roomId = 0
 				p.State = PlayerStateOutRoom
+				p.Save("roomId", p.roomId, "State", p.State)
 			}
 		}
 	})
@@ -154,6 +155,7 @@ func (p *Player) GetTicketId(rand int32) (ticketId string) {
 		log.Error("GetTicketId", strErr)
 		return ""
 	}
+	log.Println("GetTicketId:radix.FlatCmd ", ticketId, str)
 	err := cli.Do(radix.FlatCmd(nil, "set", ticketId, str))
 	if err != nil {
 		log.Println("GetTicketId", err)

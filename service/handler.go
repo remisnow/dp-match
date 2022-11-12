@@ -108,6 +108,13 @@ func OnUserEnterRoom(message *protocol.UserEnterRoom) *protocol.UserEnterRoom {
 }
 
 func OnUserLeaveRoom(message *protocol.UserLeaveRoom) *protocol.UserLeaveRoom {
+	if GetRoomManager().GetRoom(message.RoomId).GetPlayer(message.UserId) == nil {
+		log.Println("OnUserLeaveRoom error", message)
+	}
+	log.Println("OnUserLeaveRoom ", message)
+	curRoom := GetRoomManager().GetRoom(message.RoomId)
+	curRoom.RemovePlayer(curRoom.GetPlayer(message.UserId))
+	GetPlayerManager().GetPlayer(message.UserId).OnUserLeaveRoom()
 	return message
 }
 

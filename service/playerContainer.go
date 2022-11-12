@@ -21,6 +21,7 @@ func (pc *PlayerContainer) AddPlayer(p *Player) {
 	}
 	pc.players[p.UserId] = p
 	pc.count++
+	log.Println("AddPlayer count ", pc.count)
 }
 
 func (pc *PlayerContainer) RemovePlayer(p *Player) {

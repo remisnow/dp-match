@@ -14,7 +14,8 @@ const (
 	RoomServiceSteamID = "stream.match." + GameID //roomservice - match
 	MatchStreamHead    = "stream."
 	MatchRedisHead     = "Match-"
-	DataPath           = "D:/Users/17444/go/src/match"
+	DataPath           = "/matchAPP"
+	//DataPath = "D:/Users/17444/go/src/match"
 )
 
 func GetCurrentPath() string {
